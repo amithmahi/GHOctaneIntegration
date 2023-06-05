@@ -25,7 +25,7 @@ jobs:
           # ALM Octane connection data
           octaneUrl: 'http://localhost:8080/dev'
           octaneSharedSpace: 1001
-          octaneWorkspace: 1002
+          octaneWorkspace: 5001
           octaneClientId: ${{secrets.ALM_OCTANE_CLIENT_ID}}
           octaneClientSecret: ${{secrets.ALM_OCTANE_CLIENT_SECRET}}
           # Automatically provided GitHub token
