@@ -72426,7 +72426,7 @@ const eventHandler_1 = __nccwpck_require__(97774);
     catch (error) {
         let msg;
         if (error.response) {
-            msg = `${error.response.status} - ${error.response.statusText}\n${error.response.data.description_translated}`;
+            msg = `${error.response}`;
         }
         else {
             msg = error.message;
