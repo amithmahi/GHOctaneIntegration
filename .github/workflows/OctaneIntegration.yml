@@ -23,6 +23,6 @@ jobs:
           octaneWorkspace: 5001
           octaneClientId: ${{secrets.ALM_OCTANE_CLIENT_ID}}
           octaneClientSecret: ${{secrets.ALM_OCTANE_CLIENT_SECRET}}
-          githubToken: ${{secrets.TOKEN}}
+          githubToken: ${{secrets.GITHUB_TOKEN}}
           serverBaseUrl: https://github.com/TiutiuMadalin/GitHubActionsDemo
           unitTestResultsGlobPattern: "**/*.xml"
