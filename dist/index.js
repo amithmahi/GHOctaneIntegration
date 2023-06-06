@@ -72426,7 +72426,12 @@ const eventHandler_1 = __nccwpck_require__(97774);
     catch (error) {
         let msg;
         if (error.response) {
-            msg = `${JSON.stringify(error.response)}`;
+            if (error.response.config) {
+                msg = `${error.response.status} - ${error.response.statusText}\n url: ${error.response.config.url} - ${error.response.config.method}\n${error.response.data.description_translated}`;
+            }
+            else {
+                msg = JSON.stringify(error.response);
+            }
         }
         else {
             msg = error.message;
