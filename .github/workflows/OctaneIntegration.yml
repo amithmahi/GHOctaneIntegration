@@ -15,7 +15,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
       - name: GitHub Actions ALM Octane Integration
-        uses: ./
+        uses: MicroFocus/alm-octane-github-actions-integration@v1.0
         id: gitHubActionsIntegration
         with:
           octaneUrl: 'http://localhost:8080/dev'
